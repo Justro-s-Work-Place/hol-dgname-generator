@@ -10,6 +10,10 @@ on:
     - dev-ops
 
 jobs:
+  code-build:
+    name: Code Build
+    uses: ./.github/workflows/code-build.yaml
+
   docker-build-scan:
     name: Docker Build and Scan
     uses: ./.github/workflows/docker-build-scan.yaml

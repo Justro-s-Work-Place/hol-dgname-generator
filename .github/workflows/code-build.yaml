@@ -2,12 +2,12 @@ name: Code Build
 
 on:
   workflow_call:
-    secrets:
-      DOCKER_USERNAME:
-        required: true
-      DOCKER_PASSWORD:
-        required: true
-
+    # inputs:
+    #   version:
+    #     type: string
+    #     description: 'Node.js version'
+    #     required: true
+    #     default: '18.x'
 jobs:
   build:
     name: Build
