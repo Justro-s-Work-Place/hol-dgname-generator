@@ -14,7 +14,7 @@ WORKDIR /app
 
 COPY --from=build /usr/local/app /app
 
-USER nonroot
+# USER nonroot
 
 EXPOSE 3000
 
