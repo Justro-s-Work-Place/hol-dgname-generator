@@ -17,6 +17,7 @@ jobs:
   docker-build-scan:
     name: Docker Build and Scan
     uses: ./.github/workflows/docker-build-scan.yaml
+    needs: [ code-build ]
     permissions:
       # required for all workflows
       security-events: write
